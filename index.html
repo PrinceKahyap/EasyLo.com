@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,17 +24,12 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Blog <i class="fa fa-chevron-down"></i></a>
-                    <ul class="dorp-menu">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Blog Details</a></li>
-                        <li><a href="#">Element</a></li>
-                    </ul>
                 </li>
                 <li><a href="#">Contact</a></li>
+                <div class="navBtn">
+                    <a href="#">Apply For Loan</a>
+                </div>
             </ul>
-            <div class="navBtn">
-                <a href="#">Apply For Loan</a>
-            </div>
         </nav>
     </header>
     <!-- ---------------- /Header-section ------------------>
@@ -42,11 +37,8 @@
     <main>
         <!-- Hero-section  -->
         <section class="hero">
-            <div class="hero-img">
-                <img src="/images/h1_hero1.jpg" alt="hero-img">
-                <div class="h-overlay"></div>
-            </div>
-            <div class="hero_container">
+            <div class="h-overlay"></div>
+            <div class="hero_container container">
                 <div class="hero-left">
                     <h1>The simple online home loan.</h1>
                     <p>Financial uncertainly is hard on empluees, and causes even.</p>
@@ -55,8 +47,30 @@
                 <div class="hero-right">
                     <h2>Hom much you Want?</h2>
                     <p>We provide online instant cash loans.</p>
-                    <div class="Hero_form">
-                        <form action="#"></form>
+                    <div class="hero_form">
+                        <form action="#">
+                            <div class="formBox">
+                                <span>Amount you want</span>
+                                <select name="Select Amount" id="select">
+                                   <option value="">Select Amount</option>
+                                   <option value="">Categories-1</option>
+                                   <option value="">Categories-2</option>
+                                   <option value="">Categories-3</option>
+                                </select>
+                            </div>
+                            <div class="formBox">
+                                <span>Month</span>
+                                <select name="Select Amount" id="select">
+                                   <option value="">Select month</option>
+                                   <option value="">Categories-1</option>
+                                   <option value="">Categories-2</option>
+                                   <option value="">Categories-3</option>
+                                </select>
+                            </div>
+                            <h4>you have to pay: <span>$0</span></h4><br>
+                            <input type="submit" value="apply now" class="hero-btn">
+                            <h3>We provide online instant cash loans.</h3>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -65,15 +79,21 @@
 
         <!-- Services-section  -->
         <section class="service">
-            <div class="service_container">
+            <div class="title">
+                <h2>Solutions for every business need.</h2>
+                <p>The brochure must grab a viewer’s attention and hold it long
+                    enough to deliver the pertinent information.</p>
+            </div>
+            <div class="service_container container">
                 <div class="serviceBoxs">
                     <div class="service-icon">
                         <img src="/images/services1.svg" alt="home">
                         <h2>Home Loan</h2>
                     </div>
-                    <div class="hero-content">
+                    <div class="service-content">
                         <h3>What are my options and the cost to exercise?</h3>
-                        <p>Tools such as a profit and tax calculator show the value of your stock options and exercise cost.</p>
+                        <p>Tools such as a profit and tax calculator show the value of your stock options and exercise
+                            cost.</p>
                     </div>
                 </div>
                 <div class="serviceBoxs">
@@ -81,19 +101,21 @@
                         <img src="/images/services2.svg" alt="car">
                         <h2>Car Loan</h2>
                     </div>
-                    <div class="hero-content">
+                    <div class="service-content">
                         <h3>Should I exercise now or later? How can I afford it?</h3>
-                        <p>Tools such as a profit and tax calculator show the value of your stock options and exercise cost.</p>
+                        <p>Tools such as a profit and tax calculator show the value of your stock options and exercise
+                            cost.</p>
                     </div>
                 </div>
                 <div class="serviceBoxs">
                     <div class="service-icon">
                         <img src="/images/services3.svg" alt="home">
-                        <h2>Business  Loan</h2>
+                        <h2>Business Loan</h2>
                     </div>
-                    <div class="hero-content">
+                    <div class="service-content">
                         <h3>I own my shares - can I get liquidity now without selling?</h3>
-                        <p>Tools such as a profit and tax calculator show the value of your stock options and exercise cost.</p>
+                        <p>Tools such as a profit and tax calculator show the value of your stock options and exercise
+                            cost.</p>
                     </div>
                 </div>
             </div>
@@ -102,9 +124,9 @@
 
         <!-- About-section  -->
         <section class="about">
-            <div class="section_container">
-                <div class="serviceLeft">
-                    <div class="serviceLeft-img">
+            <div class="about-container container">
+                <div class="aboutLeft">
+                    <div class="aboutLeft-img">
                         <img src="/images/about1.jpg" alt="family-time-image">
                         <div class="s-overlay">
                             <span>99%</span>
@@ -112,15 +134,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="serviceRight">
+                <div class="aboutRight">
                     <h2>We guide projects and organizations in making the right decisions.</h2>
-                    <p>Tools such as a profit simulator and tax calculator show the value of your stock options and exercise cost. The brochure must grab a viewer’s attention and hold it long enough to deliver the pertinent information.</p>
-                    <div class="serviceRight-bottom">
+                    <p>Tools such as a profit simulator and tax calculator show the value of your stock options and
+                        exercise cost. The brochure must grab a viewer’s attention and hold it long enough to deliver
+                        the pertinent information.</p>
+                    <div class="aboutRight-bottom">
                         <div class="bottom-items">
-                           <p><span></span> Monthly recurring revenue</p>
-                           <p><span></span> Customer acquisition cost</p>
-                           <p><span></span> Number of customers</p>
-                           <a href="#" class="btn">Learn More</a>
+                            <p><span></span> Monthly recurring revenue</p>
+                            <p><span></span> Customer acquisition cost</p>
+                            <p><span></span> Number of customers</p>
+                            <a href="#" class="btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -132,35 +156,41 @@
         <section class="choose">
             <div class="title">
                 <h2>Why choose us?</h2>
+                <p>The brochure must grab a viewer’s attention and hold it long
+                    enough to deliver the pertinent information.</p>
             </div>
-            <div class="choose_container">
+            <div class="choose_container container">
                 <div class="chooseBoxs">
                     <div class="choose-img">
                         <img src="/images/services4.svg" alt="hand-image">
                     </div>
-                    <h2>Quick apply</h2>
-                    <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock options and exercise cost.</p>
+                    <h3>Quick apply</h3>
+                    <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock
+                        options and exercise cost.</p>
                 </div>
                 <div class="chooseBoxs">
                     <div class="choose-img">
                         <img src="/images/services5.svg" alt="hand-image">
                     </div>
-                    <h2>Online & Secure</h2>
-                    <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock options and exercise cost.</p>
+                    <h3>Online & Secure</h3>
+                    <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock
+                        options and exercise cost.</p>
                 </div>
                 <div class="chooseBoxs">
                     <div class="choose-img">
                         <img src="/images/services6.svg" alt="hand-image">
                     </div>
-                    <h2>Just time</h2>
-                    <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock options and exercise cost.</p>
+                    <h3>Just time</h3>
+                    <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock
+                        options and exercise cost.</p>
                 </div>
                 <div class="chooseBoxs">
                     <div class="choose-img">
                         <img src="/images/services7.svg" alt="hand-image">
                     </div>
-                    <h2>Low interest</h2>
-                    <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock options and exercise cost.</p>
+                    <h3>Low interest</h3>
+                    <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock
+                        options and exercise cost.</p>
                 </div>
             </div>
         </section>
@@ -168,10 +198,12 @@
 
         <!-- GetLoan-section  -->
         <section class="getLoan">
-            <div class="getLoan_container">
+            <div class="getLoan_container container">
                 <div class="getLoanleft">
                     <h2>Get loan in 3 easy steps</h2>
-                    <p>Tools such as a profit simulator and tax calculator show the value of your stock options and exercise cost. The brochure must grab a viewer’s attention and hold it long enough to deliver the pertinent information.</p>
+                    <p>Tools such as a profit simulator and tax calculator show the value of your stock options and
+                        exercise cost. The brochure must grab a viewer’s attention and hold it long enough to deliver
+                        the pertinent information.</p>
                     <div class="getLoan-bottom">
                         <p>Monthly recurring revenue</p>
                         <p>Customer acquistion cost</p>
@@ -190,13 +222,73 @@
 
         <!-- Testimonial-section  -->
         <section class="testimonial">
-            <div class="wrapper">
+            <div class="wrapper container">
                 <div class="carousel owl-carousel">
-                    <div class="card card-1">A</div>
-                    <div class="card card-2">B</div>
-                    <div class="card card-3">C</div>
-                    <div class="card card-4">D</div>
-                    <div class="card card-5">E</div>
+                    <div class="card card-1">
+                        <p> "I had 15+ folks reach out to me on EasyLo. I was completely blown away by how easy it's
+                            been to reach these prospective buyers. We weren't necessarily looking to sell but EasyLo
+                            has been A+. From start to finish, we were acquired within 30-days at full asking price."
+                        </p>
+                        <div class="card-bottom">
+                            <img src="/images/testimonial.png" alt="">
+                            <div class="card-info">
+                                <h3>Ash Wednesday</h3>
+                                <p>Designer in Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-1">
+                        <p> "I had 15+ folks reach out to me on EasyLo. I was completely blown away by how easy it's
+                            been to reach these prospective buyers. We weren't necessarily looking to sell but EasyLo
+                            has been A+. From start to finish, we were acquired within 30-days at full asking price."
+                        </p>
+                        <div class="card-bottom">
+                            <img src="/images/testimonial.png" alt="">
+                            <div class="card-info">
+                                <h3>Ash Wednesday</h3>
+                                <p>Designer in Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-1">
+                        <p> "I had 15+ folks reach out to me on EasyLo. I was completely blown away by how easy it's
+                            been to reach these prospective buyers. We weren't necessarily looking to sell but EasyLo
+                            has been A+. From start to finish, we were acquired within 30-days at full asking price."
+                        </p>
+                        <div class="card-bottom">
+                            <img src="/images/testimonial.png" alt="">
+                            <div class="card-info">
+                                <h3>Ash Wednesday</h3>
+                                <p>Designer in Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-1">
+                        <p> "I had 15+ folks reach out to me on EasyLo. I was completely blown away by how easy it's
+                            been to reach these prospective buyers. We weren't necessarily looking to sell but EasyLo
+                            has been A+. From start to finish, we were acquired within 30-days at full asking price."
+                        </p>
+                        <div class="card-bottom">
+                            <img src="/images/testimonial.png" alt="">
+                            <div class="card-info">
+                                <h3>Ash Wednesday</h3>
+                                <p>Designer in Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-1">
+                        <p> "I had 15+ folks reach out to me on EasyLo. I was completely blown away by how easy it's
+                            been to reach these prospective buyers. We weren't necessarily looking to sell but EasyLo
+                            has been A+. From start to finish, we were acquired within 30-days at full asking price."
+                        </p>
+                        <div class="card-bottom">
+                            <img src="/images/testimonial.png" alt="">
+                            <div class="card-info">
+                                <h3>Ash Wednesday</h3>
+                                <p>Designer in Google</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -204,40 +296,41 @@
 
         <!-- News-section  -->
         <section class="news">
-            <div class="news-container">
-                <div class="title">
-                    <h2>Latest News</h2>
+            <div class="title">
+                <h2>Latest News</h2>
+            </div>
+            <div class="news-container container">
+                <div class="newsBoxs">
+                    <div class="news-top">
+                        <img src="/images/blog1.jpg" alt="laptop-screen">
+                    </div>
+                    <div class="news-bottom">
+                        <span>20 March 2021</span>
+                        <h3>What are my options worth and the cost to exercise</h3>
+                        <p>Tools such as a profit simulator and tax calculator show the value of your stock options
+                            and exercise cost.</p>
+                    </div>
                 </div>
-                <div class="news_container">
-                    <div class="newsBoxs">
-                        <div class="news-top">
-                            <img src="/images/blog1.jpg" alt="laptop-screen">
-                            <span>20 March 2021</span>
-                        </div>
-                        <div class="news-bottom">
-                            <h3>What are my options worth and the cost to exercise</h3>
-                            <p>Tools such as a profit simulator and tax calculator show the value of your stock options and exercise cost.</p>
-                        </div>
+                <div class="newsBoxs">
+                    <div class="news-top">
+                        <img src="/images/blog2.jpg" alt="laptop-screen">
                     </div>
-                    <div class="newsBoxs">
-                        <div class="news-top">
-                            <img src="/images/blog2.jpg" alt="laptop-screen">
-                            <span>20 March 2021</span>
-                        </div>
-                        <div class="news-bottom">
-                            <h3>What are my options worth and the cost to exercise</h3>
-                            <p>Tools such as a profit simulator and tax calculator show the value of your stock options and exercise cost.</p>
-                        </div>
+                    <div class="news-bottom">
+                        <span>20 March 2021</span>
+                        <h3>What are my options worth and the cost to exercise</h3>
+                        <p>Tools such as a profit simulator and tax calculator show the value of your stock options
+                            and exercise cost.</p>
                     </div>
-                    <div class="newsBoxs">
-                        <div class="news-top">
-                            <img src="/images/blog3.jpg" alt="laptop-screen">
-                            <span>20 March 2021</span>
-                        </div>
-                        <div class="news-bottom">
-                            <h3>What are my options worth and the cost to exercise</h3>
-                            <p>Tools such as a profit simulator and tax calculator show the value of your stock options and exercise cost.</p>
-                        </div>
+                </div>
+                <div class="newsBoxs">
+                    <div class="news-top">
+                        <img src="/images/blog3.jpg" alt="laptop-screen">
+                    </div>
+                    <div class="news-bottom">
+                        <span>20 March 2021</span>
+                        <h3>What are my options worth and the cost to exercise</h3>
+                        <p>Tools such as a profit simulator and tax calculator show the value of your stock options
+                            and exercise cost.</p>
                     </div>
                 </div>
             </div>
@@ -249,13 +342,14 @@
 
     <!-- ---------------- Footer-section ------------------>
     <footer>
-        <section class="footer">
+        <div class="footer-container container">
             <div class="footBoxs">
                 <div class="foot-titles">
                     <img src="/images/logo2_footer.png" alt="logo">
                 </div>
                 <div class="foot-para">
-                    <p>Tools such as a profit simulator and tax calculator show the value of your stock options and exercise cost.</p>
+                    <p>Tools such as a profit simulator and tax calculator show the value of your stock options and
+                        exercise cost.</p>
                 </div>
                 <div class="foot-icons">
                     <ul>
@@ -304,15 +398,17 @@
                     </form>
                 </div>
             </div>
-        </section>
-        <section class="copyright">
-            <p>Copyright ©<span id="current-year"></span> All rights reserved | This template is made with <i class="fa fa-heart"></i> by <span>Prince kashyap</span></p>
+        </div>
+        <section class="copyright container">
+            <p>Copyright ©<span id="current-year"></span> All rights reserved | This template is made with <i
+                    class="fa fa-heart"></i> by <span>Prince kashyap</span></p>
             <button id="myBtn" onclick="topFunction()"><i class="fa fa-long-arrow-up"></i></button>
         </section>
     </footer>
     <!-- ---------------- /Footer-section ------------------>
-    
-    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/edcd5c8c16.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>

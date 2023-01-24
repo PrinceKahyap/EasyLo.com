@@ -1,7 +1,8 @@
 $(".carousel").owlCarousel({
-    margin: 10,
+    margin: 30,
     loop: true,
-    autoplay: true,
+    dots: false,
+    autoplay: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsive:{
@@ -18,4 +19,9 @@ $(".carousel").owlCarousel({
          nav: false
      },
     }
+ });
+ 
+ window.addEventListener("scroll",function(){
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky",window.scrollY > 20);
  });
