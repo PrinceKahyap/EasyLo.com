@@ -47,8 +47,9 @@
 
     .mobile-item {
         display: block;
-        font-size: 1.6rem;
         color: var(--background-light);
+        font-size: 1.6rem;
+        font-weight: 400;
         cursor: pointer;
     }
 
@@ -220,6 +221,12 @@
     }
 
     .nav-menu a {
+        font-size: 1.4rem;
+    }
+    .mobile-item {
+        font-size: 1.4rem;
+    }
+    .mobile-item i{
         font-size: 1.4rem;
     }
     .service .title h2::after {
