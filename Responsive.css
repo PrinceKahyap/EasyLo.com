@@ -1,35 +1,311 @@
-@media(max-width:568px) {
+@media(max-width: 992px) {
+    .navbar{
+        background-color: var(--background-dark);
+    }
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        padding: 50px 0px;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: #0F4332;
+        padding-left: 30px;
+        opacity: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        background: transparent;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(9px) rotate(225deg);
+        -webkit-transform: translateY(9px) rotate(225deg);
+        -moz-transform: translateY(9px) rotate(225deg);
+        -ms-transform: translateY(9px) rotate(225deg);
+        -o-transform: translateY(9px) rotate(225deg);
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-9px) rotate(-225deg);
+        -webkit-transform: translateY(-9px) rotate(-225deg);
+        -moz-transform: translateY(-9px) rotate(-225deg);
+        -ms-transform: translateY(-9px) rotate(-225deg);
+        -o-transform: translateY(-9px) rotate(-225deg);
+    }
+
+    .desktop-item {
+        display: none;
+    }
+
+    .mobile-item {
+        display: block;
+        font-size: 1.6rem;
+        color: var(--background-light);
+        cursor: pointer;
+    }
+
+    .drop-menu {
+        position: static;
+        opacity: 1;
+        background-color: #fff;
+        width: 200px;
+        visibility: visible;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        box-shadow: none;
+    }
+
+    .drop-menu li {
+        padding: 10px 20px;
+    }
+
+    #show-drop:checked~.drop-menu {
+        max-height: 100%;
+        margin-top: 20px;
+    }
+
+    .navBtn {
+        margin: 0;
+        width: 150px;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: block;
+    }
+
+    .choose_container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .title p {
+        width: 80%;
+    }
+    .hero{
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .hero-container{
+        padding: 0 20px;
+        padding-top: 200px;
+        grid-template-columns: 1fr;
+    }
+    .hero-left{
+        justify-self: left;
+        width: 100%;
+    }
+    .hero-right{
+        width: 100%;
+    }
+    .hero-left h1{
+        font-size: 6rem;
+        width: 100%;
+        color: #fff;
+        padding-bottom: 40px;
+    }
+    .hero-left h1::before{
+        position: absolute;
+        content: '';
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .container{
+        padding: 0 20px;
+    }
+    .hero-left h1{
+        font-size: 4rem;
+    }
+    .hero-right-content h2{
+        font-size: 4rem;
+    }
     .container {
-        padding: 0 10px;
+        padding: 0 20px;
+    }
+    .navbar {
+        padding: 0 20px;
+    }
+    .service .title h2::after {
+        top: 110px;
     }
     .service_container{
-        grid-template-columns: 1fr;
+        padding-top: 50px;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 50px;
     }
     .about-container{
         grid-template-columns: 1fr;
+        row-gap: 50px;
     }
-    .choose_container {
-        grid-template-columns: 1fr;
+    .s-overlay{
+        right: 0;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
     }
     .getLoan_container{
         grid-template-columns: 1fr;
     }
-    .news-container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 30px;
-    }
 
     .footer-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 50px;
+        padding-bottom: 50px;
     }
 
     .footBoxs:nth-child(2),
     .footBoxs:nth-child(3) {
         justify-self: left;
     }
-    .copyright{
+    #myBtn{
+        right: 20px;
+    }
+    .contact-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media(max-width:568px) {
+    .hero-container{
+        top: 100%;
+        padding: 0 10px;
+        padding-top: 150px;
+    }
+    .hero-left h1{
+        font-size: 4rem;
+        line-height: 1.3;
+    }
+    .hero-left{
+        justify-self: left;
+        width: 100%;
+    }
+    .hero-right{
+        width: 100%;
+    }
+    .hamburger .line{
+        width: 30px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .nav-menu {
+        padding-left: 20px;
+    }
+
+    .nav-menu a {
+        font-size: 1.4rem;
+    }
+    .service .title h2::after {
+        top: 105px;
+    }
+    .service_container{
         padding-top: 50px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .s-overlay {
+        width: 220px;
+        height: 180px;
+    }
+    .s-overlay span {
+        font-size: 5rem;
+    }
+    .aboutRight h2 {
+        font-size: 3.5rem;
+    }
+    
+    .aboutRight p {
+        font-size: 1.6rem;
+    }
+    .getLoanleft h2 {
+        font-size: 3.5rem;
+    }
+    
+    .getLoanleft p {
+        font-size: 1.6rem;
+    }
+
+    .choose_container {
+        grid-template-columns: 1fr;
+    }
+
+    .chooseBoxs h3 {
+        font-size: 1.8rem;
+    }
+
+    .chooseBoxs p {
+        font-size: 1.6rem;
+    }
+
+    .title h2 {
+        font-size: 3.5rem;
+    }
+
+    .title p {
+        width: 100%;
+    }
+    .service .title p {
+     width: 100%;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-bottom span {
+        font-size: 1.4rem;
+    }
+
+    .news-bottom h3 {
+        font-size: 2.2rem;
+    }
+
+    .news-bottom p {
+        font-size: 1.6rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 50px;
+    }
+    .footLinkes p {
+        font-size: 1.6rem;
+    }
+    .foot-icons ul {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #myBtn{
+        right: 10px;
+    }
+    .hero-right-content{
+        padding: 50px 25px;
     }
 }

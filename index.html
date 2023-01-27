@@ -20,66 +20,79 @@
                 <img src="/images/logo.png" alt="logo">
             </div>
             <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog <i class="fa fa-chevron-down"></i></a>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#service" class="nav-link">Services</a></li>
+                <li><a href="#blog" class="desktop-item nav-link">Blog <i class="fa fa-chevron-down"></i>
+                    </a>
+                    <input type="checkbox" name="" id="show-drop">
+                    <label for="show-drop" class="mobile-item">Blog <i class="fa fa-chevron-down"></i></label>
+                    <ul class="drop-menu">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Blog Details</a></li>
+                        <li><a href="#">Element</a></li>
+                    </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
                 <div class="navBtn">
-                    <a href="#">Apply For Loan</a>
+                    <a href="#home">Apply For Loan</a>
                 </div>
             </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
     <!-- ---------------- /Header-section ------------------>
     <!-- ---------------- Main-section ------------------>
     <main>
         <!-- Hero-section  -->
-        <section class="hero">
+        <div class="hero" id="home">
             <div class="h-overlay"></div>
-            <div class="hero_container container">
+            <div class="hero-container ">
                 <div class="hero-left">
                     <h1>The simple online home loan.</h1>
-                    <p>Financial uncertainly is hard on empluees, and causes even.</p>
-                    <button type="button" class="btn">OUR SERVICES</button>
+                    <p>Financial uncertainty is hard on employees, and causees even.</p>
+                    <button type="submit" class="hero-left-btn">OUR SERVICES</button>
                 </div>
                 <div class="hero-right">
-                    <h2>Hom much you Want?</h2>
-                    <p>We provide online instant cash loans.</p>
-                    <div class="hero_form">
+                    <div class="hero-right-content">
+                        <h2>How much you want?</h2>
+                        <p>We provide online instant cash loans.</p>
                         <form action="#">
-                            <div class="formBox">
-                                <span>Amount you want</span>
-                                <select name="Select Amount" id="select">
-                                   <option value="">Select Amount</option>
-                                   <option value="">Categories-1</option>
-                                   <option value="">Categories-2</option>
-                                   <option value="">Categories-3</option>
+
+                            <div class="select-Box">
+                                <span>Amount you want</span><br>
+                                <select name="" id="">
+                                    <option value="">Select Amount</option>
+                                    <option value="">Categories-1</option>
+                                    <option value="">Categories-2</option>
+                                    <option value="">Categories-3</option>
                                 </select>
                             </div>
-                            <div class="formBox">
-                                <span>Month</span>
-                                <select name="Select Amount" id="select">
-                                   <option value="">Select month</option>
-                                   <option value="">Categories-1</option>
-                                   <option value="">Categories-2</option>
-                                   <option value="">Categories-3</option>
+                            <div class="select-Box">
+                                <span>Month</span><br>
+                                <select name="" id="">
+                                    <option value="">Select Month</option>
+                                    <option value="">Categories-1</option>
+                                    <option value="">Categories-2</option>
+                                    <option value="">Categories-3</option>
                                 </select>
                             </div>
-                            <h4>you have to pay: <span>$0</span></h4><br>
-                            <input type="submit" value="apply now" class="hero-btn">
-                            <h3>We provide online instant cash loans.</h3>
+                            <button type="submit" class="hero-btn">Apply Now</button>
                         </form>
+                        <h3>We provide online instant cash loans.</h3>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- Hero-section  -->
 
         <!-- Services-section  -->
         <section class="service">
-            <div class="title">
+            <div class="title container">
                 <h2>Solutions for every business need.</h2>
                 <p>The brochure must grab a viewer’s attention and hold it long
                     enough to deliver the pertinent information.</p>
@@ -88,8 +101,8 @@
                 <div class="serviceBoxs">
                     <div class="service-icon">
                         <img src="/images/services1.svg" alt="home">
-                        <h2>Home Loan</h2>
                     </div>
+                    <h2>Home Loan</h2>
                     <div class="service-content">
                         <h3>What are my options and the cost to exercise?</h3>
                         <p>Tools such as a profit and tax calculator show the value of your stock options and exercise
@@ -99,8 +112,8 @@
                 <div class="serviceBoxs">
                     <div class="service-icon">
                         <img src="/images/services2.svg" alt="car">
-                        <h2>Car Loan</h2>
                     </div>
+                    <h2>Car Loan</h2>
                     <div class="service-content">
                         <h3>Should I exercise now or later? How can I afford it?</h3>
                         <p>Tools such as a profit and tax calculator show the value of your stock options and exercise
@@ -110,8 +123,8 @@
                 <div class="serviceBoxs">
                     <div class="service-icon">
                         <img src="/images/services3.svg" alt="home">
-                        <h2>Business Loan</h2>
                     </div>
+                    <h2>Business Loan</h2>
                     <div class="service-content">
                         <h3>I own my shares - can I get liquidity now without selling?</h3>
                         <p>Tools such as a profit and tax calculator show the value of your stock options and exercise
@@ -123,7 +136,7 @@
         <!-- Services-section  -->
 
         <!-- About-section  -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-container container">
                 <div class="aboutLeft">
                     <div class="aboutLeft-img">
@@ -153,7 +166,7 @@
         <!-- About-section  -->
 
         <!-- Choose-section  -->
-        <section class="choose">
+        <section class="choose" id="service">
             <div class="title">
                 <h2>Why choose us?</h2>
                 <p>The brochure must grab a viewer’s attention and hold it long
@@ -295,7 +308,7 @@
         <!-- Testimonial-section  -->
 
         <!-- News-section  -->
-        <section class="news">
+        <section class="news" id="blog">
             <div class="title">
                 <h2>Latest News</h2>
             </div>
@@ -337,6 +350,34 @@
         </section>
         <!-- /News-section  -->
 
+        <!-- Contact-section  -->
+        <section class="contact" id="contact">
+            <div class="title">
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="contact-container container">
+                <div class="contact-left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.112313568256!2d77.20653218753259!3d28.62892055305918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1674820306065!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-form">
+                        <form action="#">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                            <div class="formbox-50">
+                                <input type="text" placeholder="Enter your name">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <input type="text" placeholder="Enter Subject">
+                            <button type="submit" class="contact-btn">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Contact-section  -->
     </main>
     <!-- ---------------- /Main-section ------------------>
 
@@ -402,7 +443,7 @@
         <section class="copyright container">
             <p>Copyright ©<span id="current-year"></span> All rights reserved | This template is made with <i
                     class="fa fa-heart"></i> by <span>Prince kashyap</span></p>
-            <button id="myBtn" onclick="topFunction()"><i class="fa fa-long-arrow-up"></i></button>
+            <button onclick="topFunction()" id="myBtn"><i class="fa fa-long-arrow-up"></i></button>
         </section>
     </footer>
     <!-- ---------------- /Footer-section ------------------>
